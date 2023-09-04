@@ -1,0 +1,279 @@
+﻿/* IMPORTAÇÃO DA FONTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* INICIALIZAÇÃO */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* VARIÁVEIS */
+
+:root{
+    --main-bg-color: #FFF;
+    --footer-bg-color: #F9FAFB;
+    --font-logo-color: #3A404E;
+    --font-primary-color:  #101828;
+    --font-secondary-color: #8E2424;
+    --font-tertiary-color: #667085;
+}
+
+/*  */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Menu */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.menu-bar{
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: var(--font-tertiary-color);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+button {
+    background-color: var(--font-secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+} 
+
+button.login {
+    background: none;
+    color: var(--font-secondary-color);
+}
+
+span {
+    color: var(--font-secondary-color);
+    background-color: rgba(142, 36, 36, 5%);
+    border-radius: .8rem;
+    padding: .2rem .5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+p {
+   padding-bottom: 1.5rem; 
+}
+
+/* Sobre nós */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.about-us h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-us p {
+    width: 80%;
+    text-align: center;
+}
+
+/* Métricas */
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    padding: 0 4rem;
+}
+
+.metrics div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metrics div h1 {
+    margin-bottom: 0rem;
+    color: var(--font-secondary-color);
+}
+
+.metrics div h3{
+    color: var(--font-primary-color);
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 90%;
+}
+
+.metrics div p {
+    color: var(--font-tertiary-color);
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 90%
+}
+
+
+
+/* Vagas */
+
+.talents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.talents img {
+    width: 1280px;
+    margin-bottom: 1rem;
+}
+
+.talents .group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.talents .group .group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border: #EAECF0 1px solid;
+    border-radius: .8rem;
+    padding: 1rem;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.talents .group .group-item div {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 1rem;
+}
+
+.talents .group .group-item div h4 {
+    background: none;
+    margin-bottom: 1rem;
+    color: var(--font-primary-color);
+    
+}
+
+.talents .group .group-item div span {
+    background: none;
+    margin-bottom: 1rem;
+    color: var(--font-tertiary-color);
+    gap: 2rem;
+}
+
+/* Depoimentos */
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.clients div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(142, 36, 36, 5%);
+}
+
+.clients div span {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background: none;
+}
+
+.clients div p {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.clients div h3 {
+    margin-top: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.clients div h5 {
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    font-size: .7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.clients div img {
+    margin-top: 2rem;
+}
+
+/* Rodapé */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-bg-color);
+}
+
+footer h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+footer form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer input {
+    outline: none;
+    border: 1px solid #D0D5DD;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    width: 16rem;
+    margin-right: 1rem;
+  }
+
+footer span {
+    background: none;
+    padding-top: 2rem;
+}
